@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     
     // load layers
-    let result = pointController.setupLayers(fileName: "ring", destLayer: self.view.layer)
+    let result = pointController.attachLayers(to: self.view.layer, fromJsonFile: "ring")
 
     // TODO: - remove
     let layers = result.layers

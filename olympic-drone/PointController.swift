@@ -10,8 +10,8 @@ import UIKit
 class PointController: UIViewController {
   
   // setup CALayers with points
-  func setupLayers(fileName name: String, destLayer: CALayer) -> (layers: [CAShapeLayer],  points: [Point]) {
-    let points = Point.loadFromJson(fileName: "ring") // count: 782
+  func attachLayers(to targetLayer: CALayer, fromJsonFile fileName: String ) -> (layers: [CAShapeLayer],  points: [Point]) {
+    let points = Point.loadFromJson(fileName: fileName) // count: 782
     
     // setup layers for every points
     let layerCount = points.count
@@ -36,7 +36,7 @@ class PointController: UIViewController {
       layer.fillColor = UIColor(hex: points[idx].color+"ff")?.cgColor
       
       // add layers to the master view
-      destLayer.addSublayer(layer)
+      targetLayer.addSublayer(layer)
       
       // append to return array
       layers.append(layer)
