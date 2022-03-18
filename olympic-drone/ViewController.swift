@@ -25,6 +25,7 @@ func loadPoints(fileName name: String) -> [Point] {
     return points
     
   } catch {
+    // should not happen!
     print("Something went wrong: \(error)")
     return []
   }
@@ -42,7 +43,7 @@ func setupLayers(fileName name: String, to targetLayer: CALayer) -> [CAShapeLaye
   for idx in 1..<layerCount {
     let layer = CAShapeLayer()
     
-    // MARK: - ugly short version
+    // MARK: - Ugly short version
     //layer.path = UIBezierPath(ovalIn: CGRect(x: points[idx].x, y: points[idx].y, width: 1, height: 1)).cgPath
     
     // path setup
@@ -78,7 +79,8 @@ class ViewController: UIViewController {
 
 }
 
-// convert a hex color to a UIColor
+// MARK: - Convert a hex color to a UIColor
+//
 // ref: https://www.hackingwithswift.com/example-code/uicolor/how-to-convert-a-hex-color-to-a-uicolor
 extension UIColor {
     public convenience init?(hex: String) {
