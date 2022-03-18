@@ -14,6 +14,8 @@
 		3B697B1E27E4C24800A68494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B697B1D27E4C24800A68494 /* Assets.xcassets */; };
 		3B697B2127E4C24800A68494 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B697B1F27E4C24800A68494 /* LaunchScreen.storyboard */; };
 		3B697B2927E4C49100A68494 /* ring.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B697B2827E4C49100A68494 /* ring.json */; };
+		3B697B2D27E4EB5D00A68494 /* PointController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B697B2C27E4EB5D00A68494 /* PointController.swift */; };
+		3B697B2F27E4EE1000A68494 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B697B2E27E4EE1000A68494 /* Point.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		3B697B2027E4C24800A68494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B697B2227E4C24800A68494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B697B2827E4C49100A68494 /* ring.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ring.json; sourceTree = "<group>"; };
+		3B697B2C27E4EB5D00A68494 /* PointController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointController.swift; sourceTree = "<group>"; };
+		3B697B2E27E4EE1000A68494 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				3B697B1427E4C24500A68494 /* AppDelegate.swift */,
 				3B697B1627E4C24500A68494 /* SceneDelegate.swift */,
 				3B697B1827E4C24500A68494 /* ViewController.swift */,
+				3B697B2C27E4EB5D00A68494 /* PointController.swift */,
+				3B697B2E27E4EE1000A68494 /* Point.swift */,
 				3B697B1A27E4C24500A68494 /* Main.storyboard */,
 				3B697B1D27E4C24800A68494 /* Assets.xcassets */,
 				3B697B2827E4C49100A68494 /* ring.json */,
@@ -143,7 +149,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B697B1927E4C24500A68494 /* ViewController.swift in Sources */,
+				3B697B2F27E4EE1000A68494 /* Point.swift in Sources */,
 				3B697B1527E4C24500A68494 /* AppDelegate.swift in Sources */,
+				3B697B2D27E4EB5D00A68494 /* PointController.swift in Sources */,
 				3B697B1727E4C24500A68494 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
